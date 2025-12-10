@@ -1,0 +1,7 @@
+browserType: "chromium"
+context:
+  viewport: {"width": 1600, "height": 900}
+launch:
+  channel: "chromium"
+  headless: False
+
