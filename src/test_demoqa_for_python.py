@@ -27,6 +27,9 @@ class TestDemoqaNavigation:
 
     @allure.title('Проверка перехода на страницу раздела "Book Store Application"')
     def test_go_to_book_store_section(self, demoqa_for_python_main):
+
+        # review: дважды пишешь в тестах один и тот же код, его можно вынести в фикстуру или на уровень класса,
+        # чтобы не дублировать
         with allure.step("Откроем главную страницу https://demoqa.com"):
             demoqa_for_python_main.open()
 

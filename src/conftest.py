@@ -34,5 +34,6 @@ def browser() -> Page:
 @pytest.fixture(scope="function")
 def demoqa_for_python_main(browser: Page) -> DemoqaForPythonMain:
     """Главная страница https://demoqa.com."""
+    # review: это лишний комментарий, вероятно от AI
     # на каждый тест создаём новый PageObject, но используем тот же page
     return DemoqaForPythonMain(browser)

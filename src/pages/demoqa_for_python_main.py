@@ -96,5 +96,7 @@ class DemoqaForPythonMain(BasePage):
         self.go_to_elements()
 
     def open_book_store(self):
+        # review: а для чего эта обёртка, почему сразу не вызывать метод go_to_book_store, ведь по факту это и происходит
+        # review: этот метод не используется в тестах, он не должен быть в репозитории
         """Обёртка для совместимости с тестом."""
         self.go_to_book_store()
